@@ -27,12 +27,22 @@ class SidebarItemComponent extends React.Component {
                    >
                        <ListItemText
                         primary={_note.title}
-                        secondary={_note.body.substring(0,25) + '...'}
+                        secondary={removeHTMLTags(_note.body.substring(0,25)) + '...'}
                        ></ListItemText>
                    </div>
+                   <DeleteIcon onClick={()=> this.deleteNote(_note)}
+                    className={classes.deleteIcon}
+                   ></DeleteIcon>
                </ListItem>
             </div>
         );
+    }
+
+    selectNote = (n, i) => this.props.selectNote(n,i);
+    deleteNote = (note) => {
+        if(window.confirm(`Are you sure you want to delete: ${note.title}`)){
+            this.props.deleteNote(note);
+        }
     }
 }
 
