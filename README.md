@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This note-taking app was built using React.js for the front-end and it interacts with a Firebase Database. 
 
-Dependencies include npm, npx, firebase material UI and React Quill. 
+Dependencies include npm, npx, firebase, material UI and React Quill. 
 
 Firebase: npm install firebase
 
