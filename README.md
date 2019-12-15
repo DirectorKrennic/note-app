@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This note-taking app was built using React.js for the front-end and it interacts with a Firebase Database. 
+
+Dependencies include npm, npx, firebase material UI and React Quill. 
+
+Firebase: npm install firebase
+
+Material UI: npm install @material-ui/core
+
+React Quill: npm install react-quill
+
 ## Available Scripts
 
 In the project directory, you can run:
